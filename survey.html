@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Department Survey - GMU</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #006633, #004d26);
+            background-size: 400% 400%;
+            animation: gradient-shift 15s ease infinite;
+            min-height: 100vh;
+            color: white;
+        }
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    
+        .container {
+            background-color: rgba(0, 77, 38, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            color: white;
+            position: relative;
+        }
+    
+        header {
+            background-color: rgba(0, 77, 38, 0.9);
+            border: 4px solid #FFCC33;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            color: white;
+            position: relative;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #FFCC33;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .logo-container img {
+            max-width: 80px;
+            max-height: 80px;
+            border-radius: 10px;
+        }
+
+        .form-label {
+            color: #FFCC33;
+        }
+
+        .form-control, .form-select {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .btn-primary {
+            background-color: #FFCC33;
+            border-color: #FFCC33;
+            color: #004d26;
+        }
+
+        .btn-primary:hover {
+            background-color: #FFD633;
+            border-color: #FFD633;
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            accent-color: #FFCC33;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="logo-container">
+            <img src="images/Screenshot 2025-02-03 161804.png" alt="GMU CS Department Logo">
+        </div>
+        <header class="text-center p-4 border border-5 shadow">
+            <h1 class="display-6">CS Department Survey</h1>
+        </header>
+
+        <form action="#" method="post" autocomplete="on" class="mt-4" id="departmentSurvey">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">Full Name*</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-transparent text-white"><i class="bi bi-person"></i></span>
+                        <input type="text" id="name" class="form-control" required autofocus>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email*</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-transparent text-white"><i class="bi bi-envelope"></i></span>
+                        <input type="email" id="email" class="form-control" placeholder="example@gmu.edu" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-transparent text-white"><i class="bi bi-telephone"></i></span>
+                        <input type="tel" id="phone" class="form-control" placeholder="123-456-7890">
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="visitDate" class="form-label">Date of Visit*</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-transparent text-white"><i class="bi bi-calendar-check"></i></span>
+                        <input type="date" id="visitDate" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">What did you like most? (Select all that apply)</label>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="students">
+                            <label class="form-check-label" for="students">Students</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="location">
+                            <label class="form-check-label" for="location">Location</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="campus">
+                            <label class="form-check-label" for="campus">Campus</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="atmosphere">
+                            <label class="form-check-label" for="atmosphere">Atmosphere</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="dorms">
+                            <label class="form-check-label" for="dorms">Dorm Rooms</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="sports">
+                            <label class="form-check-label" for="sports">Sports</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">How did you hear about us?</label>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="interest" id="friends">
+                            <label class="form-check-label" for="friends">Friends</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="interest" id="tv">
+                            <label class="form-check-label" for="tv">Television</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="interest" id="internet">
+                            <label class="form-check-label" for="internet">Internet</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="interest" id="other">
+                            <label class="form-check-label" for="other">Other</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="comments" class="form-label">Additional Comments</label>
+                <textarea id="comments" class="form-control" rows="4" placeholder="Share your thoughts about the CS department..."></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="recommend" class="form-label">Would you recommend GMU?</label>
+                <select id="recommend" class="form-select">
+                    <option>Very Likely</option>
+                    <option>Likely</option>
+                    <option>Unlikely</option>
+                </select>
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">
+                    <i class="bi bi-send me-2"></i>Submit Survey
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

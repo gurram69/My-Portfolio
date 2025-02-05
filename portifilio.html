@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu Gurram - Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="portstyle.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Sweet Alert Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="site-main-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand animate__animated animate__pulse" href="#">
+                    <img src="./images/rsz_3rsz_chinese-knot-removebg-preview.png" alt="Logo" width="50" class="rounded-circle">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link hover-effect" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link hover-effect" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link hover-effect" href="#work">Work</a></li>
+                        <li class="nav-item"><a class="nav-link hover-effect" href="#cs-dept">CS Dept</a></li>
+                        <li class="nav-item"><a class="nav-link hover-effect" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header id="home" class="hero bg-dark text-white py-5 mt-5">
+            <div class="container">
+                <div class="row align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-md-6 text-center">
+                        <img src="./images/5686717e-b7c4-43a7-93ee-e051c160653b-removebg-preview.png" class="img-fluid rounded-circle shadow-lg" alt="Profile">
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="text-danger">VISHNU GURRAM</h6>
+                        <h1>I'm a <span class="text-danger typed-text"></span></h1>
+                        <p class="lead">
+                            As a dedicated student, I believe that the learning process requires both perseverance and effort, 
+                            often accompanied by challenges. However, I embrace every detail of my academic journey, 
+                            knowing that each experience contributes to my growth and future success.
+                        </p>
+                        <a href="images/20211a0599_gurram vishnuu.pdf" target="_blank" class="btn btn-outline-danger btn-lg pulse-animation">MY RESUME</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="about py-5">
+            <div class="container">
+                <div class="row align-items-center" data-aos="zoom-in-right">
+                    <div class="col-md-6">
+                        <img src="./images/for the 1.jpg" class="img-fluid about-me-img rounded shadow-lg" alt="About Me">
+                    </div>
+                    <div class="col-md-6">
+                        <h2>About <span class="text-danger">Me</span></h2>
+                        <h3 class="text-muted">Hello! I'm GURRAM VISHNU.</h3>
+                        <p class="lead">
+                            I am a Master's student in Computer Science at George Mason University, 
+                            passionate about AI, neural engineering, and web development. 
+                            With a strong foundation in bioengineering and data analysis, 
+                            I explore the intersection of technology and healthcare to create innovative solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work bg-dark text-white py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">My <span class="text-danger">Work</span></h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4" data-aos="flip-left">
+                        <div class="card h-100 border-danger hover-card">
+                            <img src="./images/farm app final pic.jpg" class="card-img-top" alt="Easy Farm">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Easy Farm</h5>
+                                <p class="card-text">Smart farming application predicting weather conditions and providing farming insights.</p>
+                                <a href="https://github.com/gurram69/EASY-FARM-APPPLICATION" class="btn btn-danger btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="flip-up">
+                        <div class="card h-100 border-danger hover-card">
+                            <img src="./images/paper.jpg" class="card-img-top" alt="Research Paper">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Classification Algorithms Study</h5>
+                                <p class="card-text">Comparative study of classification algorithms on a contrived dataset.</p>
+                                <a href="https://ieeexplore.ieee.org/document/10441771" class="btn btn-danger btn-sm">Read Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="flip-right">
+                        <div class="card h-100 border-danger hover-card">
+                            <img src="./images/Collage announcements app.jpg" class="card-img-top" alt="College App">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">College Announcements App</h5>
+                                <p class="card-text">Platform for real-time updates and notifications for students and faculty.</p>
+                                <a href="https://github.com/gurram69/Collage-Announcements" class="btn btn-danger btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cs-dept" class="cs-department bg-light py-5">
+            <div class="container">
+                <div class="row" data-aos="fade-in">
+                    <div class="col-12 text-center mb-4">
+                        <h2>Computer Science <span class="text-danger">Department</span></h2>
+                        <p class="text-muted lead">Explore GMU's CS Department and Share Your Perspective</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm border-danger hover-card">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Department Overview</h5>
+                                <p class="card-text">Discover the latest initiatives, research projects, and academic resources of the Computer Science Department at George Mason University.</p>
+                                <a href="index.html" class="btn btn-outline-danger">Explore Department</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm border-danger hover-card">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Community Feedback Survey</h5>
+                                <p class="card-text">Your input matters! Participate in our survey to help improve the CS department's programs, resources, and student experience.</p>
+                                <a href="survey.html" class="btn btn-outline-danger">Take Survey</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Contact <span class="text-danger">Me</span></h2>
+                <div class="row justify-content-center" data-aos="slide-up">
+                    <div class="col-md-8">
+                        <form id="contactForm" class="needs-validation" novalidate>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                                    <div class="invalid-feedback">Please enter a valid email.</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                <div class="invalid-feedback">Please enter a subject.</div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                <div class="invalid-feedback">Please enter a message.</div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-dark text-white text-center py-4">
+            <div class="container">
+                <img src="./images/chinese-knot-removebg-preview.png" alt="Logo" width="100" class="mb-3 rounded-circle shadow-sm">
+                <div class="social-links mb-3">
+                    <a href="https://leetcode.com/u/Gurram22/" class="mx-2 social-icon"><img src="./images/rsz_leetcode_logo_1.png" alt="LeetCode" width="30"></a>
+                    <a href="https://www.instagram.com/gurram.vxshnu/" class="mx-2 social-icon"><img src="./images/rsz_instagram_1.png" alt="Instagram" width="30"></a>
+                    <a href="https://github.com/gurram69" class="mx-2 social-icon"><img src="./images/rsz_social.png" alt="GitHub" width="30"></a>
+                </div>
+                <p class="mb-0">&copy; 2025 Gurram Vishnu Teja. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- External Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <!-- Custom Script -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            disable: false,
+            startEvent: 'DOMContentLoaded',
+            initClassName: 'aos-init',
+            animatedClassName: 'aos-animate',
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+        });
+
+        // Form Validation
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+        // Typed Text Effect
+        new Typed('.typed-text', {
+            strings: ['Graduate in Computer Science', 'AI Enthusiast', 'Web Developer'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+</html>

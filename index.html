@@ -1,208 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My awesome portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <title>CS Department - GMU</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #006633, #004d26);
+            background-size: 400% 400%;
+            animation: gradient-shift 15s ease infinite;
+            min-height: 100vh;
+        }
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    
+        .container {
+            background-color: rgba(0, 77, 38, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+    
+        header {
+            background-color: rgba(0, 77, 38, 0.9);
+            border: 4px solid #FFCC33;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+    
+        header h1 {
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+            color: #FFCC33;
+        }
+    
+        header img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        /* New styles for yellow titles and white content */
+        h2 {
+            color: #FFCC33;
+        }
+
+        section p, section ul {
+            color: white;
+        }
+
+        .table {
+            color: white;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="site-main-wrapper">
-        <button class="hamberger">
-            <img src="./images/hamberger.svg" alt="">
-        </button>
-
-        <div class="mobile-nav">
-            <button class="times"><img src="./images/times.svg" alt=""></button>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">work</a></li>
-            </ul>
-        </div>
+    <div class="container mt-5">
         <header>
-            <div class="container">
-                <nav id="main-nav" class="flex items-center justify-between">
-                    <div class="left flex items-center">
-                        <div class="branding">
-                            <img src="./images/rsz_3rsz_chinese-knot-removebg-preview.png" alt="">
-                        </div>
-                        <div>
-                            <a href="#">Home</a>
-                            <a href="#about">About</a>
-                            <a href="#work">work</a>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <button class="btn btn-primary">Contact</button>
-                    </div>
-                </nav>
-                <div class="hero flex items-center justify-between">
-                    <div class="left flex-1 flex justify-center">
-                        <img src="./images/5686717e-b7c4-43a7-93ee-e051c160653b-removebg-preview.png" alt="">
-                    </div>
-                    <div class="right flex-1">
-                        <h6>VISHNU GURRAM</h6>
-                        <h1>I’m a <span>Graduate in Computer Science</span></h1>
-                        <p>
-                            As a dedicated student, 
-                            I believe that the learning process requires both perseverance and effort, 
-                            often accompanied by challenges. However, 
-                            I embrace every detail of my academic journey,
-                             knowing that each experience contributes to my growth and future success.
-                        </p>
-                        <div>
-                            <a href="Kodandaram-Sri-Satya-Sai-Merla-Resume (1).pdf" target="_blank" class="btn btn2">My Resume</a>
-                            <button class="btn btn-secondary">MY RESUME</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <img src="images/Screenshot 2025-02-03 161804.png" alt="Department Icon" class="img-fluid">
+            <h1>Computer Science Department</h1>
         </header>
-
-        <section id="about" class="about">
-            <div class="container flex items-center about-inner-wrap">
-                <div class="flex-1">
-                    <img class="about-me-img" src="./images/for the 1.jpg" alt="">
-                </div>
-                <div class="flex-1 right">
-                    <h1>About <span>Me</span></h1>
-                    <h3>Hello! i’m GURRAM VISHNU.</h3>
-                    <p>
-                        I am a Master's student in Computer Science at George Mason University, 
-                        passionate about AI, neural engineering, and web development. 
-                        With a strong foundation in bioengineering and data analysis, 
-                        I explore the intersection of technology and healthcare to create innovative solutions. 
-                        I thrive on challenges that push me to learn, build, and contribute to impactful advancements in brain-computer interfaces, 
-                        medical technology, and interactive applications.
-                    </p>
-                </div>
-                
+        <section class="mt-4">
+            <h2>About the Department</h2>
+            <p>The Computer Science department at GMU is committed to excellence in research and teaching. We offer cutting-edge courses and state-of-the-art facilities for students.</p>
+        </section>
+    
+        <section class="mt-4">
+            <h2>MS Degrees Offered</h2>
+            <ul>
+                <li>MS in Computer Science</li>
+                <li>MS in Software Engineering</li>
+                <li>MS in Information Systems</li>
+                <li>MS in Information Security</li>
+            </ul>
+        </section>
+    
+        <section class="mt-4">
+            <h2>Required Courses</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Course Number</th>
+                            <th>Course Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>CS 501</td><td>Advanced Algorithms</td></tr>
+                        <tr><td>SWE 510</td><td>Software Engineering Principles</td></tr>
+                        <tr><td>IS 510</td><td>Information Systems Design and Development</td></tr>
+                        <tr><td>ISA 510</td><td>Information Security Fundamentals</td></tr>
+                    </tbody>
+                </table>
             </div>
         </section>
-
-        <section id="work" class="work">
-            <div class="container">
-                <h1 class="section-heading"><span>My</span> work</h1>
-                <p>my personal projects</p>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./images/farm app final pic.jpg" alt="">
-                        </div>
-                        <div class="card-content">
-                            <a href="https://github.com/gurram69/EASY-FARM-APPPLICATION">
-                                <h1>Easy Farm</h1>
-                            </a>
-                            <span>March, 2024</span>
-                            <p>
-                                Easy Farm is a smart farming application that predicts weather conditions and provides essential farming insights to help farmers make informed decisions. It offers real-time weather forecasts, crop recommendations.
-                            </p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./images/paper.jpg" alt="">
-                        </div>
-                        <div class="card-content">
-                            <a href="https://ieeexplore.ieee.org/document/10441771">
-                                <h1>PAPER: Comparative study of classification algorithms on contrived new</h1>
-                            </a>
-                            <span>Feb 28, 2024</span>
-                            <p>
-                                This study compares various classification algorithms on a newly contrived dataset to evaluate their performance, accuracy, and efficiency. 
-                                By analyzing different machine learning models, the research aims to determine the most effective algorithm for the given dataset, 
-                                providing insights into their strengths and limitations in classification tasks
-                            </p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./images/Collage announcements app.jpg" alt="">
-                        </div>
-                        <div class="card-content">
-                            <a href="https://github.com/gurram69/Collage-Announcements">
-                                <h1>Collage Announcements App</h1>
-                            </a>
-                            <span>Nov, 2023</span>
-                            <p>
-                                The College Announcement App is a streamlined platform designed 
-                                to keep students and faculty informed about important updates, events, 
-                                and notifications in real time. 
-                                It ensures seamless communication within the institution, 
-                                allowing users to receive instant alerts, schedule reminders, 
-                                and stay updated with academic and extracurricular activities
-                            </p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
+    
+        <section class="mt-4">
+            <h2>Survey</h2>
+            <div class="d-grid gap-2">
+                <a href="survey.html" class="btn btn-success btn-lg">Take the CS Department Survey</a>
             </div>
         </section>
-
-        <section class="contact">
-            <div class="container">
-                <h1 class="section-heading">Contact <span>Me</span></h1>
-                <p>To contact me for further discussions</p>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="./images/rsz_add-contact.png" alt="">
-                        <h1>Call me On</h1>
-                        <h6>+1 5715629934 </h6>
-                    </div>
-                    <div class="card">
-                        <img src="./images/rsz_gmail.png" alt="">
-                        <h1>Email Me At</h1>
-                        <h6>vgurram2@gmu.edu</h6>
-                    </div>
-                    <div class="card">
-                        <img src="./images/rsz_office-building.png" alt="">
-                        <h1>Visit Office</h1>
-                        <h6>9930 faiefax sq, fairfax VA 22031</h6>
-                    </div>
-
-                </div>
-
-                <form action="contactform.php" method="POST">
-                    <div class="input-wrap">
-                        <input type="text" name="name" placeholder="Your Name *" required>
-                        <input type="email" name="email" placeholder="Your Email *" required>
-                    </div>
-                    <div class="input-wrap-2">
-                        <input type="text" name="subject" placeholder="Your Subject..." required>
-                        <textarea name="message" cols="30" rows="10" placeholder="Your Message..." required></textarea>
-                    </div>
-                    <div class="btn-wrapper">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </div>
-                </form>                
-            </div>
-        </section>
-        <footer>
-            <img class="footer-logo" src="./images/chinese-knot-removebg-preview.png" alt="">
-            <div class="footer-socials">
-                <a href="https://leetcode.com/u/Gurram22/"> <img src="./images/rsz_leetcode_logo_1.png" alt=""></a>
-                <a href="https://www.instagram.com/gurram.vxshnu/"> <img src="./images/rsz_instagram_1.png" alt=""></a>
-                <a href="https://github.com/gurram69"> <img src="./images/rsz_social.png" alt=""></a>
-            </div>
-            <div class="copyright">
-                Copyright 2025 © Gurram Vishnu Teja
-            </div>
-        </footer>
     </div>
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/app.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
